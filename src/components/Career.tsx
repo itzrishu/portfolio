@@ -15,18 +15,29 @@ const Career = () => {
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Full Stack Developer</h4>
-                <h5>Ikshan</h5>
+                <h4>Freelance Web Developer</h4>
+                <h5>E-Commerce Platform • Food Mood</h5>
               </div>
-              <h3>2020</h3>
+              <h4>April 2025</h4>
             </div>
             <p>
-              Built 6+ complete applications using React.js. Integrated backend
-              authentication using Node.js & MongoDB. Created responsive UI/UX
-              and designed wireframes using Figma.
+              Developed a full-stack e-commerce web application for a local food
+              business, enabling seamless online ordering, menu browsing, and
+              real-time order tracking. Built a secure backend using Node.js and
+              MongoDB for orders, user management, and inventory.
             </p>
+            {/* <p>
+              Designed a responsive, user-friendly UI with HTML, CSS, JavaScript,
+              and Tailwind CSS. Implemented authentication and role-based access
+              control (JWT) to secure transactions and admin features.
+            </p> */}
+            {/* <p>
+              Enhanced engagement with cart system, order history, and dynamic
+              product display. Tech Stack: Node.js, MongoDB, HTML, CSS,
+              JavaScript, Tailwind CSS, JWT.
+            </p> */}
           </div>
-          <div className="career-info-box">
+          {/* <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
                 <h4>Senior Full Stack Developer</h4>
@@ -39,7 +50,7 @@ const Career = () => {
               operations platform. Developed multiple modules using React.js &
               migrated critical functionalities to Node.js microservices.
             </p>
-          </div>
+          </div> */}
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">

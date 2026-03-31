@@ -1,31 +1,36 @@
 import { useState, useCallback } from "react";
 import "./styles/Work.css";
-import WorkImage from "./WorkImage";
 import { MdArrowBack, MdArrowForward } from "react-icons/md";
 
 const projects = [
   {
-    title: "Project 1",
-    category: "Web Development",
-    tools: "React, Node.js, MongoDB",
+    title: "1. Food Mood",
+    category: "Online Food Delivery Platform",
+    tools: "Node.js, MongoDB, HTML, CSS, Tailwind CSS, JavaScript",
+    description:
+      "Food Mood is an online food delivery platform designed for a local restaurant, enabling customers to easily order their favorite meals online.\n\nThe project includes a user-friendly website with features such as an interactive menu, easy ordering system, real-time order tracking,\n\n secure payment options, and customer reviews.\n\nAdditionally, the platform offers special deals, personalized recommendations, and a user account for order history and saving favorites.\n\n The project aims to enhance the restaurant's online presence and provide a seamless food ordering experience for users.",
     image: "/images/radix.png",
   },
   {
-    title: "Project 2",
-    category: "Full Stack Application",
-    tools: "Next.js, TypeScript, PostgreSQL",
+    title: "2. Library Management System",
+    category: "Web-based Library Management",
+    tools: "HTML, CSS, JavaScript, PHP, MySQL",
+    description:
+      "A web-based Library Management System designed to efficiently manage book records, issue/return processes, and user data.\n\nThe system simplifies library operations by digitizing manual tasks and improving accessibility for both students and administrators.",
     image: "/images/bond.png",
   },
   {
-    title: "Project 3",
-    category: "Frontend UI",
-    tools: "React, Tailwind CSS, GSAP",
+    title: "3. Edu Path  Student Progress Tracker App",
+    category: "Student Progress Tracking",
+    tools: "React, HTML, CSS, JavaScript, Node.js, MongoDB",
+    description:
+      "Edu Path is a student progress tracking application that helps monitor academic performance and learning progress.\n\nIt provides insights into student achievements, attendance, and subject-wise performance to support better decision-making.",
     image: "/images/Solidx.png",
   },
 ];
 
 const Work = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(2);
   const [isAnimating, setIsAnimating] = useState(false);
 
   const goToSlide = useCallback(
@@ -96,14 +101,16 @@ const Work = () => {
                         <p className="carousel-category">
                           {project.category}
                         </p>
+                        <div className="carousel-description">
+                          {project.description.split('\n\n').map((paragraph, idx) => (
+                            <p key={idx}>{paragraph}</p>
+                          ))}
+                        </div>
                         <div className="carousel-tools">
                           <span className="tools-label">Tools & Features</span>
                           <p>{project.tools}</p>
                         </div>
                       </div>
-                    </div>
-                    <div className="carousel-image-wrapper">
-                      <WorkImage image={project.image} alt={project.title} />
                     </div>
                   </div>
                 </div>
