@@ -42,15 +42,8 @@ const Navbar = () => {
   return (
     <>
       <div className="header">
-        <a href="/#" className="navbar-title" data-cursor="disable">
-          SR
-        </a>
-        <a
-          href="https://mail.google.com/mail/?view=cm&fs=1&to=shubhamrajshu000@gmail.com"
-          className="navbar-connect"
-          data-cursor="disable"
-        >
-          shubhamrajshu000@gmail.com
+        <a href="/images/logo.png" target="_blank" className="navbar-title navbar-logo" data-cursor="disable">
+          <img src="/images/logo.png" alt="Shubham profile logo" className="logo-image" />
         </a>
         <ul>
           <li>
@@ -61,6 +54,16 @@ const Navbar = () => {
           <li>
             <a data-href="#work" href="#work">
               <HoverLinks text="WORK" />
+            </a>
+          </li>
+          <li>
+            <a data-href="#education" href="#education">
+              <HoverLinks text="EDUCATION" />
+            </a>
+          </li>
+          <li>
+            <a data-href="#certification" href="#certification">
+              <HoverLinks text="CERTIFICATION" />
             </a>
           </li>
           <li>
